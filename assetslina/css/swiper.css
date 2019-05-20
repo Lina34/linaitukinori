@@ -30,13 +30,14 @@
 }
 .swiper-wrapper {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 500px;
+  height: 500px;
   z-index: 1;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+
   -webkit-transition-property: -webkit-transform;
   transition-property: -webkit-transform;
   -o-transition-property: transform;
