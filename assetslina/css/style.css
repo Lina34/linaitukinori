@@ -2,6 +2,38 @@ body {
     background: linear-gradient(rgb(0, 0, 0), rgb(48, 48, 48), rgb(0, 0, 0));
 }
 
+li {
+    list-style: none;
+}
+
+/* ----- 背景用の動画ファイル ----- */
+
+#bg-video{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background: url('../img/top.mp4') no-repeat;
+    background-size: cover;
+   }
+   /* ----- 背景の上に表示させたいコンテンツ ----- */
+   .top-title{
+    position: relative; /*必ず必要*/
+    z-index: 2; /*必ず必要*/
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    margin: auto;
+   }
+
+
+
 p {
     color: white;
     font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
