@@ -1,0 +1,287 @@
+body {
+    background: linear-gradient(rgb(0, 0, 0), rgb(48, 48, 48), rgb(0, 0, 0));
+}
+
+p {
+    color: white;
+    font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
+}
+
+h1,h2 {
+    color:white;
+    font-family: serif;
+    font-size: 22px;
+}
+
+.border {
+    height: 2px;
+    width: 70%;
+    background-color: rgb(223, 5, 23);
+    opacity: 0.4;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+/* メニューに関わるやつここから */
+header {
+   height:100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+
+
+header p {
+    color:white;
+    font-size:30px;
+    margin-left:10px;
+}
+
+main {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
+
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin: 20px 20px;
+    margin: 10px 0;
+
+}
+
+.menu a {
+    margin: 0 5px;
+}
+
+
+
+main {
+    height:auto;
+}
+
+footer {
+    height:100px;
+}
+
+
+
+.entirebody{
+    margin: 0 auto;
+    width: 960px;
+    padding: 50px 0;
+    
+}
+
+ul.mainnav {
+    float: left;
+    position: relative;
+    width: 100%;
+    margin-left: 560px;
+}
+ul.mainnav li {
+    float: left;
+	font-family: 'HelveticaWorld-Regular';
+    font-size: 14px;
+    margin: 0 13px;
+}
+ul.mainnav li a {
+    color: #ffffff;
+    float: left;
+    font-family: 'HelveticaNeueLTCom-Lt';
+    font-size: 18px;
+    line-height: 50px;
+    margin-top: 4px;
+}
+ul.mainnav li a:hover, 
+ul.mainnav li a.active {
+    color: rgb(255, 255, 255);
+}
+ul.mainnav li a#magic-line {
+    background: url("../img/mainnav_active.png") repeat-x scroll left top transparent;
+    color: rgb(255, 255, 255);
+    height: 50px;
+    left: 0;
+    list-style: none outside none;
+    /* opacity: 0.4; */
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+
+/* ここまでメニュー */
+
+
+/* スリックボックス */
+.slick-box-img {
+    height:600px;
+    width:600px;
+    clear:both; 
+    padding:2px;  
+}
+
+.slick-box img {
+    object-fit: contain;
+}
+
+.slick-box {
+    display: flex;
+    margin: 10px 0;
+
+}
+/* スリックボックス */
+
+
+
+
+/* スライダーのボタンをカスタマイズ */
+.swiper-button-prev,
+.swiper-button-next {
+  width: 32px;
+  height: 32px;
+  margin-top: -16px;
+  top: calc((100% - 50px) * 0.5);	/* ☆★ページネーション・スクロールバー（50px）を除く縦位置の中央（＝スライドの高さの中央）に一旦配置 */
+}
+.swiper-button-prev {
+    /* background: url(https://haniwaman.com/wp-content/uploads/2018/05/swiper3.png) no-repeat center center / contain; */
+}
+.swiper-button-next {
+    /* background: url(https://haniwaman.com/wp-content/uploads/2018/05/swiper4.png) no-repeat center center / contain; */
+}
+/* スライダーのボタンをカスタマイズ終わり */
+
+
+/* スライダー */
+.swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+
+/* Swiperの親要素 */
+.swiper-parent {
+    position: relative;
+    height: 90%;
+    width: 90%;
+    margin:20px auto;
+    border: 1px rgba(220, 20, 53,0.4) solid;
+    padding:10px;
+
+}
+/* Swiper本体 */
+.swiper-container {
+	width: calc(100% - 100px);	/* ☆前・次ページボタンの幅をそれぞれ50pxとして、その分を引く */
+    box-sizing: content-box;
+
+}
+/* 前・次スライドボタンの縦位置調整（スライドの高さの中央に合わせる） */
+.swiper-button-prev, .swiper-button-next {
+	top: calc((100% - 50px) * 0.5);	/* ☆★ページネーション・スクロールバー（50px）を除く縦位置の中央（＝スライドの高さの中央）に一旦配置 */
+}
+
+
+/* スライダー */
+
+.history {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    /* margin: 20px 30px; */
+}
+
+.history h1 {
+    margin: 11px;
+}
+
+.historycolumn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    /* margin: 20px 30px; */
+}
+
+.historycolumn h1 {
+    margin: 11px;
+}
+
+.someElementleft,.someElementleft2 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.someElementright,.someElementright2 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.someElementright img,.someElementright2 img {
+    border:solid 3px rgb(126, 109, 83);
+    object-fit: contain;
+
+}
+
+.someElementright a,.someElementright2 a {
+    text-decoration: none;
+    color:white;
+}
+
+.someElementright a:hover,.someElementright2 a:hover {
+    color:red;
+
+}
+
+.history img {
+    width: 80%;
+    height: 200px;
+    /* width: 500px; */
+    margin-left:5%;
+}
+
+.history p {
+    /* width: 100%; */
+    line-height: 30px;
+    font-size: 15px;
+    
+}
+
+.history p:first-of-type {
+    margin-top: 10px;
+}
+
+.history p:last-of-type {
+    margin-bottom: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 70px;
+}
+
+
+

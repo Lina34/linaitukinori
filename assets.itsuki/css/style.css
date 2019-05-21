@@ -1,0 +1,306 @@
+body {
+    font-family: YuGothic, "Yu Gothic", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    
+}
+
+/* header */
+header {
+
+}
+
+/* main */
+main {
+
+}
+
+/* main1 始まり*/
+
+.main1 {
+    background-color: black;
+    height: 50vh;
+    position: relative;
+}
+
+.en, .chi, .kana, .hira {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+}  
+
+.en {
+    font-size: 150px;
+    top: 230px;
+    right: 0;
+    color: orange;
+
+}
+
+.chi {
+    font-size: 80px;
+    right: 0;
+    -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+}
+
+.kana {
+    font-size: 60px;
+    right: 180px;
+    top: 100px;
+}
+
+.hira {
+    font-size: 70px;
+    left: 200px;
+    top: 240px;
+}
+
+.slide {
+    width: 400px;
+    height: 300px;
+    float: left;
+}
+
+.slide-content {
+    display: block;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    left: -100%;
+    animation: slideAnimation 15s ease infinite;
+}
+
+.slide .slide-content:nth-of-type(1) {
+    animation-delay: 0s;
+}
+.slide .slide-content:nth-of-type(2) {
+    animation-delay: 3s;
+}
+.slide .slide-content:nth-of-type(3) {
+    animation-delay: 6s;
+}
+.slide .slide-content:nth-of-type(4) {
+    animation-delay: 9s;
+}
+.slide .slide-content:nth-of-type(5) {
+    animation-delay: 12s;
+}
+
+@keyframes slideAnimation {
+    0% {
+        left: -100%;
+    }
+    5% {
+        left:0;
+    }
+    15% {
+        left:0;
+    }
+    20% {
+        left: 100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+
+/* main1 終わり */
+
+/* main2 始まり*/
+
+.main2 {
+    /* background: url('../img/trianglify.png'); */
+    font-size: 100%;
+    animation-name: anime1;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    background-color: orange;
+    padding: 100px;
+}
+
+
+/* timeline 始まり*/
+
+
+
+#timeline{
+    /* background:url(http://dummyimage.com/1x1/f43059/f43059.gif) top center repeat-y; */
+    width:820px;
+    padding:50px 0;
+    margin:0 auto 50px auto;
+    overflow:hidden;
+    list-style:none;
+    position:relative;
+}
+
+.pole {
+    width: 1px;
+    height: 950px;
+    background-color: black;
+    align-content: center;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: -50px;
+}
+
+#timeline:before, /* The dot */
+#timeline:after{ /* The arrow */
+    content:" ";
+    width:10px;
+    height:10px;
+    display:block;
+    background: black;
+    position:absolute;
+    z-index: 2;
+    top:0;
+    left:50%;
+    margin-left:-5px;
+    
+    -webkit-border-radius:20px;
+        -moz-border-radius:20px;
+            border-radius:20px;
+}
+
+#timeline:after{
+    margin-left:-7px;
+    background:none;
+    border:7px solid transparent;
+    border-top-color: black;
+    width:0;
+    height:0;
+    top:auto;
+    bottom:-7px;
+    
+    -webkit-border-radius:0;
+        -moz-border-radius:0;
+            border-radius:0;
+}
+
+#timeline li:before,
+#timeline li:after{
+  content:" ";
+  width:70px;
+  height:1px;
+  background: black;
+  position:absolute;
+  left:100%;
+  top:50%;
+  background:-moz-linear-gradient(0,gray,black);
+  background:-webkit-gradient(linear,left top,right top,from(gray),to(black));
+}
+
+#timeline li:nth-of-type(even) {
+    float:right;
+    text-align:left;
+}
+
+#timeline li:nth-of-type(even):after{ /* Move branches */
+    background:-moz-linear-gradient(0, black, gray);
+    background:-webkit-gradient(linear,left top,right top,from(black),to(gray));
+    left:auto;
+    right:100%;
+}
+
+#timeline li:nth-of-type(odd),
+#timeline li:nth-of-type(even){
+  margin:-10px 0 0 0;
+}
+
+#timeline li{
+    color: white;
+    position:relative;
+    clear:both;
+    float:left;
+    width:318px;
+    padding:10px;
+    background: black;
+    text-align:right;
+    margin:0 0 10px 0;
+    
+    -webkit-border-radius:5px;
+        -moz-border-radius:5px;
+            border-radius:5px;
+    -webkit-box-shadow:0 1px #fff inset;
+        -moz-box-shadow:0 1px #fff inset;
+            box-shadow:0 1px #fff inset;
+}
+
+/* timeline 終わり */
+
+/* main3 始まり*/
+
+.main3 {
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.main3 div {
+    padding: 50px;
+    margin: 100px;
+    position: relative;
+    
+}
+
+
+.ds h1, .switch h1 {
+    font-size: 200px;
+    color: orange;
+    
+}
+
+.ds h1 {
+    float: right;
+    position: absolute;
+    top: 250px;
+    
+}
+
+.ds p {
+    float: right;
+    width: 600px;
+    line-height: 30px;
+}
+
+.ds img {
+    width: 25%;  
+    border-radius: 5px;
+    position: absolute;
+    left: 25%;
+    top: -40%;
+}
+
+.switch h1 {
+    padding-left: 150px;
+}
+
+.switch img {
+    
+    width: 25%;
+    border-radius: 5px;
+    position: absolute;
+    right: 15%;
+    top: 45%;
+    z-index: 1;
+
+}
+
+.switch p {
+    float: left;
+    width: 40%;
+    margin-top: 40px;
+    line-height: 30px;
+
+}
+
+/* footer */
+
+footer {
+
+
+}
