@@ -8,8 +8,10 @@ li {
 
 /* ----- 背景用の動画ファイル ----- */
 
+
 #bg-video{
     position: fixed;
+    top:-80px;
     right: 0;
     bottom: 0;
     min-width: 100%;
@@ -18,21 +20,43 @@ li {
     height: auto;
     z-index: -100;
     background: url('../img/top.mp4') no-repeat;
-    background-size: cover;
+    /* background-size: cover; */
+    object-position: 20% 0;
    }
    /* ----- 背景の上に表示させたいコンテンツ ----- */
    .top-title{
+    height: 50vh;
+    width: 100%;
     position: relative; /*必ず必要*/
     z-index: 2; /*必ず必要*/
     display: flex;
-    width: 50%;
     justify-content: center;
-    align-items: center;
+    padding:150px 0;
+    /* align-items: center; */
     text-align:center;
-    margin: auto;
+    background:rgba(0, 0, 0, 0.4);
    }
 
+.top-title p {
+    font-size: 30px;
+    margin:20px 0;
+}
 
+.top-title ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.toplist {
+    display: flex;
+    font-size:60px;
+}
+
+.toplist a {
+    text-decoration: none;
+    margin:0 20px;
+    color:white;
+}
 
 p {
     color: white;

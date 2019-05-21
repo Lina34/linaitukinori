@@ -1,5 +1,7 @@
 $(function() {
 
+
+
     let swiper = new Swiper('.swiper-container', {
       navigation: {
         nextEl: '.swiper-button-next',
@@ -69,6 +71,12 @@ $(function() {
 
 
 
+  // top
+  $(".role").scrollTop(function() {
+    anime({
+      targets: '.role',
+      rotate: 1800
+  });
 
 
 
@@ -79,6 +87,5 @@ $(function() {
 
 
 
-
-
+});
 });
