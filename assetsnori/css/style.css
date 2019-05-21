@@ -1,0 +1,228 @@
+body {
+    background-color: #083494;     
+}
+
+header {
+  height:100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.menu {
+  display: flex;
+  align-items: center;
+  margin: 20px 20px;
+  margin: 10px 0;
+
+}
+
+.menu a {
+  margin: 0 5px;
+}
+
+/* 
+
+main {
+  height:auto;
+}
+
+footer {
+  height:100px;
+} */
+
+
+
+.entirebody{
+  margin: 0 auto;
+  width: 960px;
+  padding: 50px 0;
+  
+}
+
+ul.mainnav {
+  float: left;
+  position: relative;
+  width: 100%;
+  margin-left: 560px;
+}
+ul.mainnav li {
+  float: left;
+font-family: 'HelveticaWorld-Regular';
+  font-size: 14px;
+  margin: 0 13px;
+}
+ul.mainnav li a {
+  color: #ffffff;
+  float: left;
+  font-family: 'HelveticaNeueLTCom-Lt';
+  font-size: 18px;
+  line-height: 50px;
+  margin-top: 4px;
+}
+ul.mainnav li a:hover, 
+ul.mainnav li a.active {
+  color: rgb(255, 255, 255);
+}
+ul.mainnav li a#magic-line {
+  background: url("../img/mainnav_active.png") repeat-x scroll left top transparent;
+  color: rgb(255, 255, 255);
+  height: 50px;
+  left: 0;
+  list-style: none outside none;
+  /* opacity: 0.4; */
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+
+/* ここまでメニュー */
+
+header p {
+   color:white;
+   font-size:30px;
+   margin-left:10px;
+}
+
+.slide-img {
+    width:90%;
+    height:90%;
+    object-fit: cover; 
+    margin-left: 60px;
+    border: 3px solid white;
+  }
+  
+  .swiper-container {
+    width: 100%;
+    height: 90%;
+  }
+
+  footer {
+    height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  
+  .copy-right {
+    justify-self: end;
+    margin-bottom: 1%;
+  }
+
+  .ps4rogo{
+      background-image: url(images/logo-ps4.png);
+      background-size:cover; 
+      height: 250px;
+      width: 400px;
+      position: absolute;
+      left: 450px;
+      top: 400px;
+      z-index: 100;
+      /* display: none; */
+  }
+/* 
+  .ps4 {
+    background-image: url(images/ps4.png);
+    background-size:cover;
+    /* height: 300px;
+    width: 350px; */
+    /* position: relative;
+    left: 300px;
+    top:500px;
+    z-index: 100;
+  } */
+
+  .grid  {
+      display: grid;
+      grid-template-rows: repeat(4,400px);
+      grid-template-columns: 400px 400px;
+      grid-gap: 10px;
+      padding: 30px;
+      justify-content: center;
+  }
+
+  .grid1 {
+      background-image: url(images/ps4.png);
+      background-size: cover;
+  }
+
+  .grid2 {
+    background-image: url(images/psvr2.png);
+    background-size: cover;
+    /* background: left 10px; */
+  }
+
+  .grid3 {
+    background-image: url(images/psclassic1.jpeg);
+    background-size: cover;
+  }
+
+  .grid4 {
+    background-image: url(images/psvita1.jpg);
+    background-size: cover;
+  }
+  .grid div {
+      background-color: white;
+  }
+
+  .grid  span {
+    margin-left: 30px;
+    font-size: 35px;
+  }
+
+  .grid p {
+margin-top: 60px;
+  }
+
+  .topbutton img{
+    height: 150px;
+    width: 180px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 100;
+    display: none;
+  }
+
+  .youtube {
+    background-color: white;
+    height: 500px;
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .youtube h2 {
+    font-size: 40px;
+    font-family: Arial,;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .youtubesony {
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer {
+      background-color: #f0ecec;
+  }
+
+
+  @media screen and (max-width: 830px){
+
+    .grid  {
+      grid-template-rows: repeat(5,400px);
+      grid-template-columns: 400px;
+    }
+
+    .ps4rogo {
+      position: relative;
+      left: 250px;
+      top: 350px;
+
+    }
+  }
+
