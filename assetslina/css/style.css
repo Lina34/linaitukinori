@@ -140,7 +140,7 @@ ul.mainnav {
     float: left;
     position: relative;
     width: 100%;
-    margin-left: 560px;
+    /* margin-left: 560px; */
 }
 ul.mainnav li {
     float: left;

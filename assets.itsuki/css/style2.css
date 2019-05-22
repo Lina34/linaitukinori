@@ -1,0 +1,295 @@
+body {
+    font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
+}
+
+/* メニュー始まり */
+
+header {
+    background-color: black;
+    height:100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ 
+ 
+ 
+ header p {
+     color:white;
+     font-size:30px;
+     margin-left:10px;
+ }
+ 
+ main {
+     /* display: flex;
+     flex-direction: column;
+     justify-content: space-around; */
+ 
+ }
+ 
+ .menu {
+     display: flex;
+     align-items: center;
+     margin: 20px 20px;
+     margin: 10px 0;
+ 
+ }
+ 
+ .menu a {
+     margin: 0 5px;
+ }
+ 
+ 
+ 
+ main {
+     height:auto;
+ }
+ 
+ footer {
+     height:100px;
+ }
+ 
+ 
+ 
+ .entirebody{
+     margin: 0 auto;
+     /* width: 960px; */
+     padding: 50px 0;
+     
+ }
+ 
+ ul.mainnav {
+     float: left;
+     position: relative;
+     /* width: 100%; */
+     /* margin-left: 560px; */
+ }
+ ul.mainnav li {
+     float: left;
+     font-family: 'HelveticaWorld-Regular';
+     font-size: 14px;
+     margin: 0 13px;
+ }
+ ul.mainnav li a {
+     color: #ffffff;
+     float: left;
+     font-family: 'HelveticaNeueLTCom-Lt';
+     font-size: 18px;
+     line-height: 50px;
+     margin-top: 4px;
+ }
+ ul.mainnav li a:hover, 
+ ul.mainnav li a.active {
+     color: rgb(255, 255, 255);
+ }
+ ul.mainnav li a#magic-line {
+     background: url("../img/mainnav_active.png") repeat-x scroll left top transparent;
+     color: rgb(255, 255, 255);
+     height: 50px;
+     left: 0;
+     list-style: none outside none;
+     /* opacity: 0.4; */
+     position: absolute;
+     top: 0;
+     z-index: 10;
+ }
+ 
+ footer {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 70px;
+}
+
+ /* ここまでメニュー */
+
+main {
+    position: relative;
+}
+
+.main1 {
+    color: white;
+    height: 100vh;
+    background-image: url('../img/gamer.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main1-div {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    position: relative;
+    
+}
+
+.main1-h1 {
+    
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 80px;
+    background-color: black;
+    animation: anime1 1s ease;
+    position: absolute;
+}
+
+@keyframes anime1 {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: 27.5%;
+    }
+}
+
+
+.game-button {
+    font-size: 50px;
+
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    margin-top: 300px;
+    width: 800px;
+    animation: anime2 1s ease;
+}
+
+@keyframes anime2 {
+    0% {
+        right: 0%;
+    }
+    100% {
+        right: 29%;
+    }
+}
+
+.game-button a {
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    border-radius: 70px;
+    line-height: 70px;
+    padding: 20px;
+
+}
+
+.game-button a:hover {
+    background-color: rgba(128, 128, 128, 0.548);
+
+}
+
+.main2 {
+    height: 130vh;
+    font-size: 50px;
+    /* position: absolute; */
+    /* left: -100%; */
+    position: relative;
+}
+
+.main2 div {
+
+    -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column; 
+    margin-top: 400px;
+    margin-left: 50px;
+    position: absolute;
+    left: -100%;     
+}
+
+.machine {
+    padding-top: 200px;
+}
+
+.main2 div p {
+    padding-left: 50px
+}
+
+.main2 div p:nth-of-type(even) {
+    padding-top: 50px;
+}
+
+.main2 h1 {
+    margin: 100px;
+    font-size: 100px;
+    display: none;
+}
+
+.main22 {
+    /* height: 130vh; */
+}
+
+.main3 {
+    height: 50vh;
+    position: relative;
+    padding: 200px;
+}
+
+.main3 h1 {
+    margin-left: 100px;
+    font-size: 200px;
+    position: absolute;
+    left: -100%;
+    margin: 0 auto;
+}
+
+.main3 img {
+    float: left;
+    margin-top: 350px;
+    margin-left: 200px;
+    width: 400px;
+    display:none;
+}
+
+.main3 p {
+    margin-left: 900px;
+    font-size: 150%;
+    display: none;
+    width: 600px;
+    text-align: center;
+    line-height: 40px;
+    /* position: absolute; */
+    /* right: -100%; */
+}
+
+.main4 {
+    height: 70vh;
+    position: relative;
+}
+
+.main4 h1 {
+    font-size: 200px;
+    position: absolute;
+    right: -100%;
+    margin-right: 100px;
+}
+
+.main4 img {
+    float: right;
+    margin-top: 500px;
+    margin-right: 400px;
+    width: 400px;
+    display:none;
+
+}
+
+.main4 p {
+    font-size: 150%;
+    width: 600px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    left: 150px;
+    top: 200px;
+    display:none;
+
+}
+
+
+
+
