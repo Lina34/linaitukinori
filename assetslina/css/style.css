@@ -2,6 +2,76 @@ body {
     background: linear-gradient(rgb(0, 0, 0), rgb(48, 48, 48), rgb(0, 0, 0));
 }
 
+li {
+    list-style: none;
+}
+
+/* ----- 背景用の動画ファイル ----- */
+
+
+#bg-video{
+    position: fixed;
+    top:-80px;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background: url('../img/top.mp4') no-repeat;
+    /* background-size: cover; */
+    object-position: 20% 0;
+   }
+   /* ----- 背景の上に表示させたいコンテンツ ----- */
+   .top-title{
+    height: 50vh;
+    width: 100%;
+    position: relative; /*必ず必要*/
+    z-index: 2; /*必ず必要*/
+    display: flex;
+    justify-content: center;
+    padding:150px 0;
+    /* align-items: center; */
+    text-align:center;
+    background:rgba(0, 0, 0, 0.5);
+   }
+
+.top-title p {
+    font-size: 30px;
+    margin:20px 0;
+}
+
+.top-title ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.toplist {
+    display: flex;
+    font-size:30px;
+}
+
+.toplist a {
+    text-decoration: none;
+    margin:0 20px;
+    color:rgb(187, 187, 187);
+    margin-left:80px;
+
+    display: inline-block;
+    transition: .3s;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+
+}
+
+.toplist a:hover {
+    color:rgb(210, 231, 255);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+
+}
+
 p {
     color: white;
     font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
@@ -84,7 +154,7 @@ ul.mainnav {
     float: left;
     position: relative;
     width: 100%;
-    margin-left: 560px;
+    /* margin-left: 560px; */
 }
 ul.mainnav li {
     float: left;
@@ -283,5 +353,33 @@ footer {
     margin-right: 70px;
 }
 
+/* ページトップにいくやつ */
+.pagetop {
+    /* display: none; */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+}
+.pagetop a {
+    /* display: block; */
+    /* background-color: #ccc; */
+    /* text-align: center; */
+    /* color: rgb(255, 255, 255); */
+    text-decoration: none;
+}
+
+.pagetop img {
+    height: 40px;
+    width: 40px;
+    
+}
+ 
+.pagetop a:hover {
+    /* display: block; */
+    /* background-color: rgb(255, 255, 255); */
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
 
 
+/* ページトップにいくやつ */

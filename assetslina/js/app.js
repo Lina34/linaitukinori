@@ -1,5 +1,25 @@
 $(function() {
 
+    var topBtn = $('.pagetop');
+    topBtn.hide();
+    //スクロールが500に達したらボタン表示
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 500) {
+            topBtn.fadeIn();
+        } else {
+            topBtn.fadeOut();
+        }
+    });
+    //スルスルっとスクロールでトップへもどる
+    topBtn.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+
+    
+
     let swiper = new Swiper('.swiper-container', {
       navigation: {
         nextEl: '.swiper-button-next',
@@ -55,15 +75,37 @@ $(function() {
 
   
 
-  // 押したらスクロールする
-  $('a[href^="#"]').click(function() {
-    // スクロールの速度
-    var speed = 400; // ミリ秒で記述
-    var href= $(this).attr("href");
-    var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top;
-    $('body,html').animate({scrollTop:position}, speed, 'swing');
-    return false;
+
+
+
+
+  // top
+  $(".role").scrollTop(function() {
+    anime({
+      targets: '.role',
+      translateX: -500,
+      translateY: -100,
+      scale: 1,
+      // rotate: 900,
+      duration: 1500,
+      // direction: 'alternate',
+      easing: 'easeInCubic',
+      delay: 150
+
+  });
+
+  $(".role2").scrollTop(function() {
+    anime({
+      targets: '.role2',
+      translateX: 300,
+      translateY: 230,
+      scale: 1.5,
+      rotate: 750,
+      duration: 1500,
+      // direction: 'alternate',
+      easing: 'easeInCubic',
+      delay: 150
+
   });
 
 
@@ -74,11 +116,9 @@ $(function() {
 
 
 
+});
 
 
 
-
-
-
-
+});
 });
