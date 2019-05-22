@@ -66,7 +66,7 @@ ul.mainnav li a.active {
   color: rgb(255, 255, 255);
 }
 ul.mainnav li a#magic-line {
-  background: url("../img/mainnav_active.png") repeat-x scroll left top transparent;
+  background: url("./images/mainnav_active.png") repeat-x scroll left top transparent;
   color: rgb(255, 255, 255);
   height: 50px;
   left: 0;
@@ -78,6 +78,25 @@ ul.mainnav li a#magic-line {
 }
 
 /* ここまでメニュー */
+
+/* * スリックボックス */ 
+.slick-box-img {
+    height:600px;
+    width:600px;
+    clear:both; 
+    padding:2px;  
+}
+
+.slick-box img {
+    object-fit: contain;
+}
+
+.slick-box {
+    display: flex;
+    margin: 10px 0;
+
+}
+/* スリックボックス */
 
 header p {
    color:white;
