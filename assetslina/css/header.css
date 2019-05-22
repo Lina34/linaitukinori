@@ -1,0 +1,108 @@
+body {
+    background: linear-gradient(rgb(0, 0, 0), rgb(48, 48, 48), rgb(0, 0, 0));
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+/* メニューに関わるやつここから */
+header {
+   height:100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+
+
+header p {
+    color:white;
+    font-size:30px;
+    margin-left:10px;
+}
+
+main {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
+
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    margin: 20px 20px;
+    margin: 10px 0;
+
+}
+
+.menu a {
+    margin: 0 5px;
+}
+
+
+
+main {
+    height:auto;
+}
+
+footer {
+    height:100px;
+}
+
+
+
+.entirebody{
+    margin: 0 auto;
+    width: 960px;
+    padding: 50px 0;
+    
+}
+
+ul.mainnav {
+    float: left;
+    position: relative;
+    width: 100%;
+    margin-left: 560px;
+}
+ul.mainnav li {
+    float: left;
+	font-family: 'HelveticaWorld-Regular';
+    font-size: 14px;
+    margin: 0 13px;
+}
+ul.mainnav li a {
+    color: #ffffff;
+    float: left;
+    font-family: 'HelveticaNeueLTCom-Lt';
+    font-size: 18px;
+    line-height: 50px;
+    margin-top: 4px;
+}
+ul.mainnav li a:hover, 
+ul.mainnav li a.active {
+    color: rgb(255, 255, 255);
+}
+ul.mainnav li a#magic-line {
+    background: url("../img/mainnav_active.png") repeat-x scroll left top transparent;
+    color: rgb(255, 255, 255);
+    height: 50px;
+    left: 0;
+    list-style: none outside none;
+    /* opacity: 0.4; */
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+
+/* ここまでメニュー */
+
+
